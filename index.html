@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oliver Hero</title>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #eee;
+  }
+  body {
+    background: url('images.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+  }
+  h1, .links {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: none;
+  }
+  .links a {
+    display: block;
+    width: 220px;
+    margin: 12px auto;
+    padding: 15px;
+    background: rgba(17, 17, 17, 0.8);
+    border-radius: 10px;
+    color: #f00;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow:
+      0 0 8px #f00,
+      0 0 15px #f00 inset;
+    transition: all 0.4s ease;
+  }
+  .links a:hover {
+    color: #fff;
+    background: #f00;
+    box-shadow:
+      0 0 20px #ff3333,
+      0 0 40px #ff0000 inset;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+  <h1>Oliver Hero</h1>
+  <div class="links">
+    <a href="https://youtube.com/@oliverheroshingiro?si=dSDjrxntkYCGP2Mq" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <a href="https://www.twitch.tv/bitoliver" target="_blank" rel="noopener noreferrer">Twitch</a>
+    <a href="https://www.reddit.com/user/sentinelsaiyan/" target="_blank" rel="noopener noreferrer">Reddit</a>
+  </div>
+</body>
+</html>
